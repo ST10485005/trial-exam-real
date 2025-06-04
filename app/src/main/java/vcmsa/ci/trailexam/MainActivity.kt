@@ -1,6 +1,10 @@
 package vcmsa.ci.trailexam
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,11 +15,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        // Get references to UI elements
+        val tvAppName = findViewById<TextView>(R.id.tvAppName)
+        val etStudentName = findViewById<EditText>(R.id.etStudentName)
+        val btnStart = findViewById<Button>(R.id.btnStart)
+        val btnExit = findViewById<Button>(R.id.btnExit)
+        //link this screen to the flashcard screen
+        btnStart.setOnClickListener {
+            val intent = Intent(this, MainScreen::class.java)
+            startActivity(intent)
         }
     }
 }
-//just to push
