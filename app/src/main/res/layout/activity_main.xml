@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/aura"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".MainActivity">
@@ -15,6 +16,8 @@
         android:layout_height="65dp"
         android:layout_margin="20dp"
         android:padding="10dp"
+        android:background="@color/aura"
+        android:textColor="@color/black"
         android:text="GameTester Log"
         android:textSize="20sp" />
 
@@ -24,6 +27,8 @@
         android:layout_height="72dp"
         android:layout_margin="20dp"
         android:ems="10"
+        android:background="@color/aura"
+        android:textColor="@color/black"
         android:inputType="text"
         android:padding="10dp"
         android:text="Michael Gouveia" />
@@ -33,6 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:layout_margin="20dp"
+        android:background="@color/aura"
+        android:textColor="@color/black"
         android:ems="10"
         android:inputType="text"
         android:padding="10dp"
@@ -43,6 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:backgroundTint="@color/custombuttons"
+        android:textColor="@color/black"
         android:text="START!"
         android:textSize="18sp" />
 
@@ -52,6 +61,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:padding="10dp"
+        android:backgroundTint="@color/custombuttons"
+        android:textColor="@color/black"
         android:text="EXIT!"
         android:textSize="18sp" />
 </LinearLayout>
